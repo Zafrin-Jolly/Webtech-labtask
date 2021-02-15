@@ -27,6 +27,7 @@
 <td>confirm password:</td>
 <input type="text"id="p"name="pname">
 </tr>
+
 <tr>
     <td>Gender <br>
     <input type="radio" id="male" name="gender" value="male">
