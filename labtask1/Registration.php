@@ -9,23 +9,23 @@
 <table>
 <tr>
 <td>Name:</td>
-<input type="text"id="f"name="fname">
+<td><input type="text"id="f"name="fname"></td>
 </tr>
 <tr>
 <td>Email:</td>
-<input type="text"id="e"name="ename">
+<td><input type="text"id="e"name="ename"></td>
 </tr>
 <tr>
 <td>User name:</td>
-<input type="text"id="u"name="uname">
+<td><input type="text"id="u"name="uname"></td>
 </tr>
 <tr>
 <td>password:</td>
-<input type="text"id="p"name="pname">
+<td><input type="text"id="p"name="pname"></td>
 </tr>
 <tr>
 <td>confirm password:</td>
-<input type="text"id="p"name="pname">
+<td><input type="text"id="p"name="pname"></td>
 </tr>
 
 <tr>
@@ -45,6 +45,7 @@
     <td><input type="submit" value="SUBMIT">
     <input type="reset" value="RESET"></td>
     </tr>
+    </table>
     </form>
 
 </body>
