@@ -6,9 +6,9 @@
         $username = $_REQUEST["username"];
         $email = $_REQUEST["email"];
         $password = $_REQUEST["password"];
-        $cpassword = $_REQUEST["cpassword"];
+        
 
-        if(empty($username) || empty($email) || empty($password) || empty($cpassword)) {
+        if(empty($username) || empty($email) || empty($password) ) {
             $generalError = "Please fill up all the fields";
         } else {
             if(!preg_match("/[a-zA-Z0-9._]+/", $username)) {
@@ -28,11 +28,10 @@
             if(strlen($password) < 6) {
                 $passV = "Password must contain atleast 6 characters";
             }
-            if($password != $cpassword) {
-                $cpassV = "Both password have to match";
+        
             }
         }
-    }
+    
 ?>
 
 
@@ -45,20 +44,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Change Password</h1>
+    <h1>Here is your form! </h1>
     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
         <label for="username">Username: </label>
         <input type="text" name="username"> <br>
         <?php echo $usernameV ?><br>
-        <label for="email">Email</label>
+        <label for="email">Email  :</label>
         <input type="text" name="email"><br>
         <?php echo $emailV ?><br>
         <label for="password">Password: </label>
         <input type="password" name="password"><br>
         <?php echo $passV ?><br>
-        <label for="cpassword">Confirm Password</label>
-        <input type="password" name="cpassword"> <br>
-        <?php echo $cpassV ?><br>
+       
 
         
      <label for="Gender">gender: </label>
