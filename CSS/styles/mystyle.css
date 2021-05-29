@@ -1,0 +1,25 @@
+#p1{
+		background-color:rgba(0,0,0,.3);
+		color:red;
+		text-align:justify;
+		
+		
+}
+#p2{
+	margin-left:5px;
+	margin-top:10px;
+	margin-right:15px;
+	margin-bottom:20px;
+	padding:10px;
+	border:2px solid green;
+}
+#p2,#p5,#p7{
+	background-color:blue;
+	color:white;
+	text-align:justify;
+}
+.red-white{
+	background-color:red;
+	color:white;
+	text-align:justify;
+}
